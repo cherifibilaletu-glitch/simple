@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Game Hub 🎲</title>
+  <meta name="description" content="A tiny arcade that picks a random mini-game for you to play." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>" />
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+      <h1>🎲 Random Game Hub</h1>
+      <p class="tagline">Press the big button and let fate pick your game.</p>
+      <button id="surprise" class="btn btn-primary">🎰 Surprise me!</button>
+    </header>
+
+    <nav class="game-nav" id="game-nav" aria-label="Pick a game"></nav>
+
+    <main class="stage">
+      <div class="now-playing" id="now-playing"></div>
+      <section id="game-area" class="game-area" aria-live="polite"></section>
+    </main>
+
+    <footer class="footer">
+      <p>Built with vanilla HTML, CSS &amp; JavaScript — no dependencies. Have fun!</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
